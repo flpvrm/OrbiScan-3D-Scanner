@@ -45,7 +45,9 @@ OrbiScan solves the motion part: the object sits still on the platform while the
 
 **Electronics**
 - Arduino Uno (Plusivo R3) + CNC Shield V3
-- Base axis: A4988 driver, full step · Tower axis: DRV8825 driver, 1/32 microstepping
+- Base axis: A4988 driver in **full step**, chosen for maximum torque to rotate the arm and phone through the gearbox
+- Tower axis: DRV8825 driver at **1/32 microstepping**, for smooth, vibration-free vertical travel (160 steps/mm)
+- The joystick drives each axis in the same mode, so manual and automatic motion behave identically
 - 12 V / 60 W PSU wired directly to the shield, isolating the 5 V logic from motor noise
 - Control panel: analog XY joystick, green START button, red HOME/OVERRIDE button, main power toggle
 
